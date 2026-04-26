@@ -1,0 +1,21 @@
+<div class="main-container">
+   <div class="form-section">
+     <h1>Registration Form</h1>
+     <input type="text" #name placeholder="Enter your name">
+     <input type="text" #address placeholder="Enter your address">
+     <input type="text" #mobile placeholder="Enter your mobile number">
+     <input type="text" #email placeholder="Enter your email">
+     <input type="password" #password placeholder="Enter your password">
+     <button (click)="getValue(name.value , address.value , mobile.value , email.value)">
+       Register
+     </button>
+   </div>
+   
+   <div class="result-section">
+     <h1>Your Registered Data</h1>
+     <h2>Your name: {{displayName}}</h2>
+     <h2>Your address: {{displayAddress}}</h2>
+     <h2>Your mobile number: {{displayMobile}}</h2>
+     <h2>Your email: {{displayEmail}}</h2>
+   </div>
+</div>
