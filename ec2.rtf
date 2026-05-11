@@ -21,4 +21,39 @@
 14. Run cd ~\
 15. Run sudo cp -r website/* /var/www/html\
 \
+
+
+
+
+
+
+cd Downloads → open downloads folder
+
+scp -i practical.pem website.zip ubuntu@EC2_IP:/home/ubuntu → upload zip to EC2
+
+ssh -i practical.pem ubuntu@EC2_IP → connect EC2
+
+ls → check files
+
+sudo apt update → update ubuntu
+
+sudo apt install unzip -y → install unzip
+
+unzip website.zip → extract zip
+
+sudo apt install apache2 -y → install apache
+
+sudo rm /var/www/html/index.html → remove default page
+
+sudo cp -r website/* /var/www/html → copy website files
+
+cd /var/www/html → open website folder
+
+ls → verify files
+
+Open browser:
+http://EC2_IP
+
+AWS:
+Security Group → Inbound Rules → Add HTTP Port 80
 }
