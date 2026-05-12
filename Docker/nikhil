@@ -1,0 +1,23 @@
+sudo apt update
+sudo apt install docker.io -y
+docker --version
+
+sudo service docker start
+
+docker pull python:3.12
+docker images
+
+
+docker run -it --name python-container python:3.12 /bin/bash
+docker ps -a
+
+python3
+a=10
+b=20
+print(a+b)
+
+exit
+
+docker stop python-container
+docker rm python-container
+docker rmi python:3.12
